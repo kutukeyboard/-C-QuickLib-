@@ -11,7 +11,7 @@ namespace QuickLib.Lib
     public int MinCharCount { get; set; }
     public int MaxCharCount { get; set; }
     public bool IsNumeric { get; set; } = false;
-    public float MinValue {get; set; }
+    public float MinValue {get; set; } = 0;
     public float MaxValue {get;set;}
   }
 
