@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\QComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\QComboBox.Designer.cs">
+      <DependentUpon>QComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\QTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

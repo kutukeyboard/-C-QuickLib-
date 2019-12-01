@@ -15,7 +15,6 @@ namespace QuickLib.Controls
     public string Hints { 
       set {_tooltip.SetToolTip(this, value);}
     }
-     
     #endregion
 
     #region Container
@@ -30,6 +29,7 @@ namespace QuickLib.Controls
     }
     #endregion
 
+    #region Methods
     private void Validate()
     {
       string _hints ="";
@@ -85,10 +85,7 @@ namespace QuickLib.Controls
     {
       Validate();
     }
+    #endregion
 
-    
-    
-    
-    
   }
 }

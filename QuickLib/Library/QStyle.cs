@@ -28,13 +28,17 @@ namespace QuickLib.Lib
         item.ForeColor = TextColor;
         item.Font = new Font(new FontFamily("Segoe UI"),8);
 
-        if(item.GetType() == typeof(TextBox) || item.GetType() == typeof(Controls.QTextBox)) { 
+        if(item.GetType() == typeof(TextBox) || item.GetType() == typeof(Controls.QTextBox)){
           (item as TextBox).BorderStyle = BorderStyle.FixedSingle ;
         }
 
         if(item.GetType() == typeof(Button)) { 
           (item as Button).FlatStyle = FlatStyle.Flat;
           (item as Button).BackColor = PrimaryColor;
+        }
+
+        if(item.GetType() == typeof(ComboBox) || item.GetType() == typeof(Controls.QComboBox)) {
+          (item as ComboBox).FlatStyle = FlatStyle.Flat;
         }
 
 

@@ -94,6 +94,8 @@ namespace QuickLib.Lib
     }
   }
 
+  [TypeConverter(typeof(QValidationConverter))]
+  
   internal class QValidationConverter : TypeConverter
   {
     public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context,

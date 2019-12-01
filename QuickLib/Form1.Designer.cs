@@ -34,6 +34,7 @@
       this.button1 = new System.Windows.Forms.Button();
       this.qTextBox2 = new QuickLib.Controls.QTextBox(this.components);
       this.qTextBox1 = new QuickLib.Controls.QTextBox(this.components);
+      this.qComboBox1 = new QuickLib.Controls.QComboBox(this.components);
       this.SuspendLayout();
       // 
       // button1
@@ -80,11 +81,27 @@
       qTextValidation2.MinValue = 0F;
       this.qTextBox1.Validation = qTextValidation2;
       // 
+      // qComboBox1
+      // 
+      this.qComboBox1.FormattingEnabled = true;
+      this.qComboBox1.Items.AddRange(new object[] {
+            "Satu",
+            "Dua",
+            "Tiga",
+            "sasatu",
+            "wadua",
+            "gatiga"});
+      this.qComboBox1.Location = new System.Drawing.Point(46, 156);
+      this.qComboBox1.Name = "qComboBox1";
+      this.qComboBox1.Size = new System.Drawing.Size(121, 21);
+      this.qComboBox1.TabIndex = 4;
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(619, 458);
+      this.Controls.Add(this.qComboBox1);
       this.Controls.Add(this.button1);
       this.Controls.Add(this.qTextBox2);
       this.Controls.Add(this.qTextBox1);
@@ -100,5 +117,6 @@
     private Controls.QTextBox qTextBox1;
     private Controls.QTextBox qTextBox2;
     private System.Windows.Forms.Button button1;
+    private Controls.QComboBox qComboBox1;
   }
 }
